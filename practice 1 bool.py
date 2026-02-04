@@ -29,14 +29,5 @@ while True:
     else:
         print("odd")
 
-    _num2 = int(input("prime checker: "))
-    _positive2 = _num2 > 1
-    _remainder = _num2
-    _selfsplit = _num2 / _num2 == 1
-    _modulo = _num2 % 2 != 0
-    while _modulo != 0 and _remainder < _num2:
-        if _positive2 and _selfsplit:
-            print("prime")
-        else:
-            print("not prime")
+
 
