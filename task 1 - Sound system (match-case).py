@@ -1,6 +1,10 @@
 
 while True:
-    _volume = int(input("select volume between 1 and 10"))
+    _volume = input("select volume between 1 and 10")
+    if not _volume.isdigit():
+        print("please try again and", end=" ")
+        continue
+    _volume = int(_volume)
     if _volume > 10 or _volume < 1:
         print("please try again and", end=" ")
     else:
