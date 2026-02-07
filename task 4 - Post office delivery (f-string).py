@@ -34,8 +34,6 @@ print(f"COUNTRY: {_country}")
 print(f"ADDRESS: {_cityaddress}")
 print(f"ZIPCODE: {_zipcode}")
 
-time.sleep(1)
-
 
 
 
