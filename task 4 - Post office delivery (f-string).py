@@ -1,6 +1,5 @@
 
 import time
-import datetime
 
 print("Hi, its a post office delivery automatic system", end="/n"), print("please follow the rules for fluent detail entering")
 time.sleep(3)
@@ -16,8 +15,8 @@ while True:
         break
 _first_name = str(_first_name)
 while True:
-    _country = input("enter country must be only letters and more then 3 digits")
-    if _country.isalpha() and len(_country) > 3:
+    _country = input("enter country must be only letters with first capital")
+    if _country.isalpha() and len(_country) >= 3:
         break
 _country = str(_country)
 
@@ -25,15 +24,17 @@ _cityaddress = input("enter your city address, no spicel requirments")
 _cityaddress = str(_cityaddress)
 
 while True:
-    _zipcode = input("enter your zipcode, only digits allowed and more then 4 digits")
-    if _zipcode.isdigit() and len(_zipcode) > 4:
+    _zipcode = input("enter your zipcode only digits")
+    if _zipcode.isdigit() and len(_zipcode) >= 4:
+        break
+_zipcode = int(_zipcode)
 
+print(f"FOR: {_last_name}, {_first_name}")
+print(f"COUNTRY: {_country}")
+print(f"ADDRESS: {_cityaddress}")
+print(f"ZIPCODE: {_zipcode}")
 
-
-
-
-    print(f"{_last_name}, {_first_name}, {_country}, {_cityaddress}, {_zipcode}")
-
+time.sleep(1)
 
 
 
